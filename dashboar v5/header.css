@@ -1,0 +1,109 @@
+
+header .container{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: yellow;
+}
+
+header .container h3{
+	flex-basis: 180px;
+	background-color: red;
+	//margin-right: 20px;
+}
+
+
+
+.main-menu{
+	flex-basis:320px;
+	//margin-left: 20px;
+	background-color: blue;
+}
+
+.main-menu a{
+	text-decoration: none;
+	margin: 10px;
+	color: #fff;
+}
+
+.login-menu{
+	flex-basis:200px;
+	text-align: right;
+	margin-left: auto;
+	//order: 2;
+	//display: block;
+	background-color: red;
+	//flex-grow: 1;
+	padding-right: 20px;
+}
+.login-menu a{
+	text-decoration: none;
+	margin: 10px;
+	color: #fff;	
+}
+
+.login-menu i{
+	display:none;
+}
+
+
+@media(max-width: 1000px){
+	.login-menu{
+		flex-basis: 120px;
+	}
+
+	.login-menu i{
+		display:inline;
+	}
+
+	.login-menu span{
+		display: none;
+	}
+
+}
+
+@media(max-width: 850px){
+	
+	header .container{
+		justify-content: center;
+		align-items: center;
+		align-content: left;
+	}
+
+	.login-menu {
+		//margin-right: auto;
+		order:2;
+	}
+
+	header .container h3{
+		order:1;
+	}
+	.main-menu{
+		order:3;
+		flex-basis: 100%;
+		margin: 10px;
+	}
+	.main-menu a{
+		padding: 20px;
+	}
+}
+
+@media(max-width: 700px){
+
+	header .container h3{
+	flex-basis: 250px;
+	background-color: red;
+	//margin-right: 20px;
+	font-size: 25px;
+	}
+
+	header .container{
+		justify-content: space-around;
+		align-items: center;
+		align-content: left;
+	}
+
+	.main-menu a{
+		display: block;
+		text-align: center;
+	}
+}

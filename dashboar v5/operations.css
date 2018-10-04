@@ -1,0 +1,72 @@
+
+
+.dashboard{
+	position:relative;
+	background-color: blue;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.dashboard h1{
+	//background-color: red;		
+	color : white;
+	font-size:40px;
+}
+
+.dashboard i{
+	margin-right:5px;
+	font-size: 40px;
+}
+
+.operations{
+	//background-color: yellow;
+	width: 75%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.operations a {
+	text-decoration: none;
+	width: 300px;
+	color:white;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 6px;
+	text-align: center;
+	font-size:15px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.button-user{
+	background-color: #f00;
+}
+.button-item{
+	background-color: #0f0;
+}
+.button-subcategory{
+	background-color: #ee0;
+}
+.main-operations{
+	background-color:#f2f2f2;
+}
+
+@media(max-width: 850px){
+	
+	.operations{
+	//background-color: yellow;
+	width: 100%;
+
+	}
+}
+
+@media(max-width: 700px){
+
+	.operations{
+		flex-wrap: wrap;
+	}
+
+	.operations a {
+		width: 250px;
+		margin: 10px;
+	}
+}
