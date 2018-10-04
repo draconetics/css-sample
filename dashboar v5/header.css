@@ -2,13 +2,13 @@
 header .container{
 	display: flex;
 	flex-wrap: wrap;
-	background-color: yellow;
+
 }
 
 header .container h3{
+	background-color: #000;
 	flex-basis: 180px;
-	background-color: red;
-	//margin-right: 20px;
+
 }
 
 
@@ -16,7 +16,7 @@ header .container h3{
 .main-menu{
 	flex-basis:320px;
 	//margin-left: 20px;
-	background-color: blue;
+	//background-color: blue;
 }
 
 .main-menu a{
@@ -25,21 +25,32 @@ header .container h3{
 	color: #fff;
 }
 
+.main-menu a:hover{
+	color:   #9595b7;
+	font-size: 17px;
+	//box-shadow: 2px 2px rgba(255,255,255,0.2)
+}
+
+
 .login-menu{
 	flex-basis:200px;
 	text-align: right;
 	margin-left: auto;
-	//order: 2;
-	//display: block;
-	background-color: red;
-	//flex-grow: 1;
+
 	padding-right: 20px;
+
 }
 .login-menu a{
 	text-decoration: none;
 	margin: 10px;
-	color: #fff;	
+	color: #fff;
+	font-size: 15px;	
 }
+
+.login-menu a:hover{
+	color:   #9595b7;
+}
+
 
 .login-menu i{
 	display:none;
@@ -91,8 +102,6 @@ header .container h3{
 
 	header .container h3{
 	flex-basis: 250px;
-	background-color: red;
-	//margin-right: 20px;
 	font-size: 25px;
 	}
 
@@ -105,5 +114,6 @@ header .container h3{
 	.main-menu a{
 		display: block;
 		text-align: center;
+		border:1px solid #f2f2f2;
 	}
 }
