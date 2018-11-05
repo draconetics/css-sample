@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Css Borders</title>
+</head>
+<style>
+    .border-bold{
+        border: 4px solid #000;
+    }
+    
+    .border-normal{
+        border: 2px solid #000;
+    }
+    
+    .border-dotted{
+        border:2px dotted #000;
+    }
+    
+    .border-dotted-bold{
+        border: 4px dotted #000;
+    }
+    
+    .border-double-bold{
+        border: 4px double #000;
+    }
+    
+    .border-double{
+        border: 8px double #000;
+    }
+    
+    .border-custom{
+        border-top: 1px solid #000;
+        border-left: 12px solid #000;
+        border-right: 8px solid #000;
+        border-bottom: 3px solid #000;
+    }
+    
+    div{
+        margin: 16px 0px;
+    }
+</style>
+<body>
+    <h3>The border-width Property</h3>
+    <p>This property specifies the width of the forue borders:</p>
+    <div class="border-bold">Some text.</div>
+    <div class="border-normal">Some text.</div>
+    <div class="border-dotted">Some text.</div>
+    <div class="border-dotted-bold">Some text.</div>
+    <div class="border-double-bold">Some text.</div>
+    <div class="border-double">Some text.</div>
+    <div class="border-custom">Some text.</div>
+    
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone. Always specify the "border-style" property to set the borders first.</p>
+</body>
+</html>

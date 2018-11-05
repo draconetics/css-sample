@@ -3,6 +3,8 @@
 <head>
     <title>Navigation Bar Like Apple.com</title>    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
     
 <body>
@@ -10,8 +12,28 @@
     <div class="menu">
         <ul>
             <li><a href="#"><i class="fab fa-apple"></i></a></li>
+            <li><a href="#" class="menu-item">Mac</a></li>
+            <li><a href="#" class="menu-item">iPad</a></li>
+            <li><a href="#" class="menu-item">iPhone</a></li>
+            <li><a href="#" class="menu-item">Watch</a></li>
+            <li><a href="#" class="menu-item">TV</a></li>
+            <li><a href="#" class="menu-item">Music</a></li>
+            <li><a href="#" class="menu-item">Support</a></li>
+            <li><a href="#" id="search"><i class="fas fa-search"></i></a></li>
+            <li><a href="#" class="menu-item"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </div>
 </nav>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#search').click(function(){
+                $('.menu-item').toggleClass('hide-item')
+            })
+        });
+    </script>
 </body>
 </html>
