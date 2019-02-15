@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="mensaje()">
+    <script>
+    function verifyUser(){
+        if(edad_user() < 18){
+            alert("you cant access to this page.");
+        }else{
+            document.write("welcome adult");
+        }
+    }
+
+    function edad_user(){
+        var age_text = prompt("which one is your age?");
+        var age = parseInt(age_text);
+        return age;
+    }
+
+    function mensaje (){
+        var datoInt = prompt("Insert de number : ");
+        datoInt = parseInt(datoInt);
+        abuela(datoInt, "abuela ");
+    }
+
+    function abuela(prof, msg) {
+        if(prof != 0)
+            return abuela(prof-1,msg + " tatara ");
+        else
+            return alert(msg);
+    }
+
+    function tuNombre(name) {
+        switch(user_name) {
+            case "adri":alert("good name"); break;
+            case "nemo":alert("bad name"); break;
+            default: alert("name dont registered.");
+        }
+    }
+
+    function prausTest() {
+        var response, finished;
+        finished = false;
+         alert("Praus is the best in institute?");
+
+         while(!finished) {
+             response = prompt("are you sure ?");
+             if(response.indexOf("s") == 0)
+                finished = true;
+         }
+         do {
+             response = prompt("are you sure ?");
+             if(response.indexOf("s") == 0)
+                finished = true;
+         }while(!finished)
+    }
+
+    </script>
+</body>
+</html>

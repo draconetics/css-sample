@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	li{
+		background-color: red;
+	}
+
+	td{
+		width: 30px;
+		height: 30px;
+	}
+	</style>
+</head>
+<body>
+	<p>How many dreams?</p>
+
+	<ol reversed="reversed" type="A" start="A"> 
+		
+	</ol>
+
+	<div>
+		<ol type="1" id="list" >
+			
+		</ol>
+	</div>
+
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+
+	</table>
+
+
+	<script>
+	console.log(Math.random());
+	
+	let dreams = ["footbal","soccer","basketball","PES","Medal of honor","with my computer", "Dota", "Dota II"];
+	let hexadecimal = ["1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"]
+	let colorCode = ()=>{return hexadecimal[parseInt(Math.random() * hexadecimal.length)]};
+	let x = prompt("how many dreams?");
+	let list = document.getElementById("list");
+	for(let i=0; i<parseInt(x);i++){
+		
+		let item = document.createElement("li");
+		//console.log(random);
+		item.setAttribute("style","background-color:#"+colorCode()+colorCode()+colorCode()+";");
+		let singleDream = dreams[parseInt(dreams.length*Math.random())];
+		//console.log(parseInt(dreams.length*Math.random()));
+		//console.log(singleDream);
+		item.appendChild(document.createTextNode("Play "+singleDream));
+		list.appendChild(item);
+	}
+	</script>
+</body>
+</html>

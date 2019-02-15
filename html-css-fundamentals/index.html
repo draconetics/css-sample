@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: lightgrey;
+        }
+        fieldset{
+            padding: 20px;
+        }
+        .form-media{
+            background-color: yellow;
+            height: 200px;
+            
+        }
+        .form-personal-data {
+            background-color:orange;
+        }
+
+        .form-physic{
+            background-color: yellow;
+        }
+
+        .form-contact {
+            background-color: orange;
+        }
+
+
+        .header {
+            overflow: auto;
+            background-image: url(militar.jpg);
+        }
+
+        .header .header__logo {
+            
+            
+        }
+
+        .header .header__logo img{
+            width: 400px;
+            height: 200px;
+            float: left;
+        }
+
+        .header .header__menu {
+            float: right;
+            display:inline-block;
+            list-style: none;
+        }
+
+        .header .header__menu li{
+            display:inline-block;
+            background-color: yellow;
+            padding: 20px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        .header .header__menu li:hover{
+            
+            padding: 25px;
+            box-shadow: 1px 1px 5px black;
+            cursor: pointer;
+        }
+
+        .header .header__menu li a{
+            text-decoration: none;
+        }
+
+        .container .introduction {
+            margin: 40px;
+            background-color:white;
+            padding: 40px;  
+            box-shadow: 1px 1px 3px black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header__logo">
+            <img src="logo.png" alt="bootcamp">
+        </div>
+
+        <ul class="header__menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </div>
+    <div class="container">
+
+        <div class="introduction">
+                Dragon Ball (Japanese: ドラゴンボール Hepburn: Doragon Bōru), sometimes styled as Dragonball, is a Japanese media franchise created by Akira Toriyama in 1984. The initial manga, written and illustrated by Toriyama, was serialized in Weekly Shōnen Jump from 1984 to 1995, with the 519 individual chapters collected into 42 tankōbon volumes by its publisher Shueisha. Dragon Ball was initially inspired by the classical Chinese novel Journey to the West as well as Hong Kong martial arts films. The series follows the adventures of the protagonist, Son Goku, from his childhood through adulthood as he trains in martial arts and explores the world in search of the seven orbs known as the Dragon Balls, which summon a wish-granting dragon when gathered. Along his journey, Goku makes several friends and battles a wide variety of villains, many of whom also seek the Dragon Balls.
+
+                Toriyama's manga was adapted and divided into two anime series produced by Toei Animation: Dragon Ball and Dragon Ball Z, which together were broadcast in Japan from 1986 to 1996. Additionally, the studio has developed 20 animated feature films and three television specials, as well as two anime sequel series titled Dragon Ball GT (1996–1997) and Dragon Ball Super (2015–2018). From 2009 to 2015, a revised version of Dragon Ball Z aired in Japan under the title Dragon Ball Kai, as a recut that follows the manga's story more faithfully by removing most of the material featured exclusively in the anime. Several companies have developed various types of merchandising based on the series leading to a large media franchise that includes films, both animated and live-action, collectible trading card games, numerous action figures, along with several collections of soundtracks and a large number of video games. Dragon Ball is one of the top twenty highest-grossing media franchises of all time, having generated more than $20 billion in total franchise revenue as of 2018.[1] 
+        </div>
+
+        <div class="content">
+                Akira Toriyama loosely modeled Dragon Ball on the classic Chinese novel Journey to the West;[2][3] but also redeveloped it from his 1983 one-shot manga Dragon Boy.[3] He has said that the fighting was influenced from movies by famous martial arts actor Jackie Chan,[4][5] and Hong Kong martial arts films such as Enter the Dragon and Drunken Master,[6] as he wanted to create a story with the basic theme of Journey to the West, but with "a little kung fu."[7]
+
+                Since it was serialized in a shōnen magazine, he added the idea of the Dragon Balls to give it a game-like activity of gathering something, without thinking of what the characters would wish for.[7] With Goku being Sun Wukong, Bulma as Tang Sanzang, Oolong as Zhu Bajie and Yamcha being Sha Wujing, he originally thought it would last about a year or end once the Dragon Balls were collected.[5][8] Toriyama stated that although the stories are purposefully easy to understand, he specifically aimed Dragon Ball at readers older than those of his previous serial Dr. Slump.[9] He also wanted to break from the Western influences common in Dr. Slump, deliberately going for Chinese scenery, referencing Chinese buildings and photographs of China his wife had bought.[10] Toriyama wanted to set Dragon Ball in a fictional world largely based on Asia, taking inspiration from several Asian cultures including Japanese, Chinese, South Asian, Central Asian and Arabic cultures.[11] The island where the Tenkaichi Budōkai (天下一武道会, lit. "Strongest Under the Heavens Martial Arts Tournament") is held is modeled after Bali (in Indonesia), which he, his wife and assistant visited in mid-1985, and for the area around Bobbidi's spaceship he consulted photos of Africa.[10]
+                The Earth of Dragon Ball, as published in Daizenshuu 4: World Guide
+                
+                During the early chapters of the manga Toriyama's editor, Kazuhiko Torishima, commented that Goku looked rather plain, so to combat this he added several characters like Kame-Sen'nin and Kuririn, and created the Tenkaichi Budōkai martial arts tournament to focus the storyline on fighting. It was when the first Tenkaichi Budōkai began that Dragon Ball truly became popular, having recalled the races and tournaments in Dr. Slump.[5] Anticipating that readers would expect Goku to win the tournaments, Toriyama had him lose the first two while planning an eventual victory. He said that Muscle Tower in the Red Ribbon Army storyline was inspired by the video game Spartan X, in which enemies tended to appear very fast. He then created Piccolo Daimao as a truly evil villain, and as a result called that arc the most interesting to draw.[5] 
+        </div>
+        <p>Cities where you wnt to visit</p>
+        <label for="name"></label>
+        <p>Please register:</p>
+        <form action="#" method="get">
+            <fieldset class="form-media">
+                <legend>Profile</legend>
+                <label for="file">Upload your favorite photo:</label>
+                <input type="file" name="file" id=""/>
+                <img id="preview"/>
+            </fieldset>
+            
+            <fieldset class="form-personal-data">
+                <legend>Personal data</legend>
+                <label for="male">Gener</label>
+                <input type="checkbox" name="male" id="">
+                <input type="checkbox" name="female" id="">
+                <br>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="">
+                <br>
+                <label for="birthday">Born Age</label>
+                <input type="date" name="birthday" id=""/>
+                <br>
+                <label for="color">Color</label>
+                <input type="color" name="color" id=""/>
+                <br>
+                <label for="country">Country where are you from:</label>
+                <select name="country" id="">
+                    <option value="bolivia">Bolivia</option>
+                    <option value="peru">Peru</option>
+                    <option value="chile">Chile</option>
+                    <option value="usa">United States</option>
+                    <option value="brazil">Brazil</option>
+                </select>
+        
+            </fieldset>
+            <fieldset class="form-physic">
+                <legend>Something importants</legend>
+                <label for="height">Height</label>
+                <span>short</span><input type="range" name="height" id=""><span>tall</span>
+                <br>
+                <label for="Personality">Personality</label>
+                <span>negative</span><input type="range" name="" id="" min="0" max="12"><span>Positive</span>
+            </fieldset>
+            
+            <fieldset class="form-contact">
+                <legend>Your information about your contact</legend>
+                <label for="email">email</label>
+                <input type="email" name="email" id="">
+                <br>
+                <label for="Cell phone">telephone</label>
+                <input type="text" name="celular" id="">  
+                <br>
+                <label for="address">Address</label>
+                <textarea name="address" id="" cols="30" rows="10"></textarea>
+                <br>
+                <label for="contact">contact</label>
+                <label for="mail">Email</label>
+                <input type="checkbox" name="mail" id="">
+                <br>
+                <label for="whatsap">Whatsapp</label>
+                <input type="checkbox" name="whatsap" id="">
+                <br>
+                <label for="facebook">Facebook</label>
+                <input type="checkbox" name="facebook" id="">
+            </fieldset>
+                <input type="submit" value="Enviar"/>
+        </form>
+    </div>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <input type="file" name="aotherfile" id="">
+    </form>
+    <script>
+        window.onload = function() {
+            var files = document.querySelectorAll("input[type=file]");
+            files[0].addEventListener("change", function(e) {
+                if (this.files &&  this.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById("preview").setAttribute("src", e.target.result);}
+                        reader.readAsDataURL(this.files[0]);
+                }//if
+                
+            });
+        };
+    </script>
+</body>
+</html>
