@@ -201,7 +201,7 @@
             <fieldset class="form-media">
                 <legend>Profile</legend>
                 <label for="file">Upload your favorite photo:</label>
-                <input type="file" name="file" id=""/>
+                <input type="file" name="file" required/>
                 
                 <img id="preview"/>
                 <input type="hidden" name="data" value="some message"/>
@@ -213,7 +213,7 @@
                     <tr>
                         <td>
                                 <label for="gender">Gender:</label><br>
-                                Male<input type="radio" name="gender" value="male"/>
+                                Male<input type="radio" name="gender" value="male" checked required/>
                                 Female<input type="radio" name="gender" value="female"/>
                         </td>
                         <td>
