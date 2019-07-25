@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Full Transitions</title>
+
+    <style>
+        .cube{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            
+            transition: width 2s;
+        }
+        
+        .cube:hover{
+            width: 500px;
+        }
+        .cube-blue{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 3s, height 3s, background-color 3s;
+        }
+        
+        .cube-blue:hover{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is my transition</h3>
+    <div class="cube"></div><br>
+    <div class="cube-blue">Blue Square</div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grad1 {
+    z-index: 0;
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red,#0aa,yellow); /* Standard syntax (must be last) */
+}
+    
+    .note{
+        z-index: 100;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        background-image:linear-gradient(150deg,rgba(100,100,100,0.2),white);   
+    }
+    
+    .note-without-transparency{
+        z-index: 100;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        background-image:linear-gradient(150deg,rgba(100,100,100),white);   
+    }
+    .repeating-gradient{
+        //position:relative;
+        height: 200px;
+        background-image:repeating-linear-gradient(red,yellow 50%,green 20%);
+    }
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+
+<div class="grad1"></div>
+
+<p class="note"><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+    
+    <p class="note-without-transparency"><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+<br>
+    <div class="repeating-gradient"></div>
+   
+    
+</body>
+</html>

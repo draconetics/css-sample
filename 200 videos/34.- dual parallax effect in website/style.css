@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 3000px;
+}
+
+.heading{
+    background: url(nature.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.real1{
+    background: url(city.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.xp{
+    background-image: url(ptm.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.xp2{
+    background-image: url(small.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
